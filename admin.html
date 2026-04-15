@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athimni Admin | Orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="ai-page">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Athimni Admin home">
+          <span>Athimni Admin</span>
+        </a>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="index.html">Store</a>
+          <a href="#orders">Orders</a>
+        </nav>
+        <a class="button button-ghost" href="index.html">Back to Store</a>
+      </header>
+
+      <main class="ai-main" id="orders">
+        <section class="ai-hero">
+          <p class="eyebrow">Admin Panel</p>
+          <h1>Review customer orders.</h1>
+          <p class="hero-text">
+            This page loads saved orders from the backend so you can review contact details, totals, and notes.
+          </p>
+        </section>
+
+        <section class="admin-toolbar">
+          <button class="button button-primary" id="refresh-orders" type="button">Refresh Orders</button>
+          <p class="ai-status" id="orders-status" aria-live="polite"></p>
+        </section>
+
+        <section class="admin-orders" id="orders-list"></section>
+      </main>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
